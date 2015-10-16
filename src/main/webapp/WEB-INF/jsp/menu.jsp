@@ -9,14 +9,14 @@
         <title>LogIn</title>
     </head>
     <body>
-
-    <h1>Please enter your username and password</h1>
-    <form action="/login/login" method="post">
-		<p>User name: <input type="text" name="UserName" /></p>
-		
-		<p>Password: <input type="text" name="PW" /></p>
-		<p><input type="submit" value="Submit" /></p>
-	</form>
+	
+	<h1>${skilabod}</h1>
+	
+	<p>${notandi.getUserName()} er skadur inn </p>
+	
+	<button>settings</button>
+	<button>high scores</button>
+	<button>Play</button>
     
     </body>
     <footer>Class HBV501G, University of Iceland, Fall 2015</footer>

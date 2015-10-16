@@ -1,22 +1,22 @@
 package project;
 
 public class UserInfo {
-	private String UserName;
-	private String PW;
+	private String UservName;
+	private String PvW;
 	
 	public void setPW(String pass){
-		this.PW = pass;
+		this.PvW = pass;
 	}
 	
 	public void setUserName(String UN){
-		this.UserName = UN;
+		this.UservName = UN;
 	}
 	
 	public String getUsername(){
-		return this.UserName;
+		return this.UservName;
 	}
 	
 	public String getPW(){
-		return this.PW;
+		return this.PvW;
 	}
 }
