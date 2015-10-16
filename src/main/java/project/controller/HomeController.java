@@ -30,4 +30,49 @@ public class HomeController {
 		
 		return "menu";
 	}
+	
+	@RequestMapping(value="/newRegestry", method = RequestMethod.POST)
+	public String registerNewUser(Model model){
+		
+		return "register";
+	}
+	
+	@RequestMapping(value="/registered", method = RequestMethod.POST)
+	public String RegisterSuccess(@ModelAttribute("notandi") UserInfo notandi, BindingResult result, Model model){
+		
+		
+		String Message = "ny skraning tokst fyrir notenda";
+		model.addAttribute("skilabod", Message);
+		return "menu";
+	}
+	
+	
+	@RequestMapping(value="/settings", method = RequestMethod.POST)
+	public String settings( Model model){
+		
+		
+		String Message = "inn i settings";
+		model.addAttribute("skilabod", Message);
+		return "settings";
+	}
+	
+	@RequestMapping(value="/highScores", method = RequestMethod.POST)
+	public String highScores( Model model){
+		
+		
+		String Message = "inn i highScores";
+		model.addAttribute("skilabod", Message);
+		return "highScores";
+	}
+	
+	@RequestMapping(value="/play", method = RequestMethod.POST)
+	public String play( Model model){
+		
+		
+		String Message = "inn i play";
+		model.addAttribute("skilabod", Message);
+		return "play";
+	}
+	
+	
 }

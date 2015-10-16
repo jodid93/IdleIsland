@@ -22,7 +22,12 @@
 		
 	</form>
 	
-	<button>New User</button>
+	
+	<form action="/newRegestry" method="post">
+		
+		<p><input type="submit" value="New User" /></p>
+		
+	</form>
     
     </body>
     <footer>Class HBV501G, University of Iceland, Fall 2015</footer>
