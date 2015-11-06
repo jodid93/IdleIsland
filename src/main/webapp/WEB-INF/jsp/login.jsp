@@ -7,18 +7,21 @@
 
     <head>
         <title>LogIn</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'></link>
     </head>
     <body>
 
 	<form:errors path="notandi.*"/>
 
     <h1>Please enter your username and password</h1>
-    <form action="/" method="post">
+    
+    <form action="/login" method="post">
+    <h3>${skilabod}</h3>
 		<p>User name: <input type="text" name="UserName" /></p>
 		
-		<p>Password: <input type="text" name="PW" /></p>
+		<p>Password: <input type="password" name="PW" /></p>
 		
-		<p><input type="submit" value="Submit" /></p>
+		<p><input type="submit" value="Login" /></p>
 		
 	</form>
 	

@@ -7,6 +7,7 @@
 
     <head>
         <title>LogIn</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'></link>
     </head>
     <body>
 	
@@ -18,7 +19,7 @@
 		<p><input type="submit" value="Settings" /></p>
 	</form>
 	
-	<form action="/highScores" method="post">
+	<form action="/highScores" method="get">
 		<p><input type="submit" value="Highscores" /></p>
 	</form>
 	
@@ -26,6 +27,10 @@
 		<p><input type="submit" value="Play" /></p>
 	</form>
     
+    <form action="/addFriend" method="get">
+		<p><input type="submit" value="Add Friend" /></p>
+	</form>
+	
     </body>
     <footer>Class HBV501G, University of Iceland, Fall 2015</footer>
 </html>

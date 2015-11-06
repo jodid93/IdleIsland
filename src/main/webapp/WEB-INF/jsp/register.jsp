@@ -7,12 +7,15 @@
 
     <head>
         <title>User Page</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'></link>
     </head>
     <body>
 
     <h1>New user</h1>
     
     <h1>Please enter a username and password</h1>
+    
+    <h3>${skilabod}</h3>
     <form action="/registered" method="post">
 		<p>User name: <input type="text" name="UserName" /></p>
 		
