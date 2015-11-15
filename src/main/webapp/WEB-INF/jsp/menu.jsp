@@ -31,6 +31,15 @@
 		<p><input type="submit" value="Add Friend" /></p>
 	</form>
 	
+	<form action="/viewFriends" method="get">
+		<p><input type="submit" value="View Friends" /></p>
+	</form>
+	
+	<hr>
+	<form action="/logout" method="get">
+		<p><input type="submit" value="Log out" /></p>
+	</form>
+	
     </body>
     <footer>Class HBV501G, University of Iceland, Fall 2015</footer>
 </html>

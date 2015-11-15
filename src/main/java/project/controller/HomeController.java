@@ -22,6 +22,15 @@ public class HomeController {
 	private DBconnector DBconnector;
 	private util util = new util();
 	
+	@RequestMapping(value="/logout")
+	public String logout(HttpSession session){
+		
+		session.setAttribute("loggedInUser", null);
+
+		return "redirect:/login";
+		
+	}
+	
 	@RequestMapping(value="/")
 	public String redirectToLogin(){
 		
@@ -193,6 +202,19 @@ public class HomeController {
 		return "highScores";
 	}
 	
+	
+	@RequestMapping(value="/viewFriends", method = RequestMethod.GET)
+	public String viewFriends( Model model, HttpSession session){
+		
+		
+		if(session.getAttribute("loggedInUser") == null){
+			return "redirect:/login";
+		}
+		
+		String Message = "view friends";
+		model.addAttribute("skilabod", Message);
+		return "viewFriends";
+	}
 	
 	@RequestMapping(value="/play")
 	public String play( Model model, HttpSession session){

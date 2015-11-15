@@ -11,7 +11,7 @@
     </head>
     <body>
 
-    <h1>Settings</h1>
+    <h1>View Friends</h1>
     
     <br>
     <p>${skilabod}</p>

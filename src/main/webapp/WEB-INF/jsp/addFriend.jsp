@@ -18,6 +18,11 @@
 		
 	</form>
 	
+	<hr>
+	<form action="/menu" method="get">
+		<p><input type="submit" value="Back" /></p>
+	</form>
+	
     </body>
     <footer>Class HBV501G, University of Iceland, Fall 2015</footer>
 </html>

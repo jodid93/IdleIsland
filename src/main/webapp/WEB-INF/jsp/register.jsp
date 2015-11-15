@@ -25,7 +25,10 @@
 		
 	</form>
     
-
+	<hr>
+	<form action="/login" method="get">
+		<p><input type="submit" value="Back" /></p>
+	</form>
 
     </body>
 

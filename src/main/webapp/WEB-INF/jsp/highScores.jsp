@@ -13,6 +13,11 @@
 
     <h1>HIGH SCORES</h1>
     
+    <hr>
+	<form action="/menu" method="get">
+		<p><input type="submit" value="Back" /></p>
+	</form>
+    
     <br>
     <h3> Choose which highscores you want to see<h3>
     
@@ -87,7 +92,11 @@
 		</table>
     </div>
 
-
+	<hr>
+	<form action="/menu" method="get">
+		<p><input type="submit" value="Back" /></p>
+	</form>
+	
     </body>
 
 </html>
