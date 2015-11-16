@@ -10,27 +10,28 @@
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'></link>
     </head>
     <body>
-
-    <h1>HIGH SCORES</h1>
-    
-    <hr>
-	<form action="/menu" method="get">
-		<p><input type="submit" value="Back" /></p>
-	</form>
-    
-    <br>
-    <h3> Choose which highscores you want to see<h3>
-    
-    <form action="/highScores" method="post">
-		<select name="select">
-		  <option value="1">All users (global)</option> 
-		  <option value="2">Your friends</option>
-		</select>
-		
-		<p><input type="submit" value="Choose" /></p>
-		
-	</form>
-    
+	
+	<div class="col-md-offset-2">
+	    <h1>HIGH SCORES</h1>
+	    
+	    <hr>
+		<form action="/menu" method="get">
+			<p><input type="submit" value="Back" /></p>
+		</form>
+	    
+	    <br>
+	    <h3> Choose which highscores you want to see<h3>
+	    
+	    <form action="/highScores" method="post">
+			<select name="select">
+			  <option value="1">All users (global)</option> 
+			  <option value="2">Your friends</option>
+			</select>
+			
+			<p><input type="submit" value="Choose" /></p>
+			
+		</form>
+    </div>
     <div>
     	<table class="table table-striped">
 		  <thead>
@@ -93,10 +94,12 @@
     </div>
 
 	<hr>
-	<form action="/menu" method="get">
-		<p><input type="submit" value="Back" /></p>
-	</form>
+	<div class="col-md-offset-2">
 	
+		<form action="/menu" method="get">
+			<p><input type="submit" value="Back" /></p>
+		</form>
+	</div>
     </body>
 
 </html>

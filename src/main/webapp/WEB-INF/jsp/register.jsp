@@ -11,25 +11,26 @@
     </head>
     <body>
 
-    <h1>New user</h1>
-    
-    <h1>Please enter a username and password</h1>
-    
-    <h3>${skilabod}</h3>
-    <form action="/registered" method="post">
-		<p>User name: <input type="text" name="UserName" /></p>
-		
-		<p>Password: <input type="text" name="PW" /></p>
-		
-		<p><input type="submit" value="Submit" /></p>
-		
-	</form>
-    
-	<hr>
-	<form action="/login" method="get">
-		<p><input type="submit" value="Back" /></p>
-	</form>
-
+	<div class="col-md-offset-2">
+	    <h1>New user</h1>
+	    
+	    <h1>Please enter a username and password</h1>
+	    
+	    <h3>${skilabod}</h3>
+	    <form action="/registered" method="post">
+			<p>User name: <input type="text" name="UserName" /></p>
+			
+			<p>Password: <input type="text" name="PW" /></p>
+			
+			<p><input type="submit" value="Submit" /></p>
+			
+		</form>
+	    
+		<hr>
+		<form action="/login" method="get">
+			<p><input type="submit" value="Back" /></p>
+		</form>
+	</div>
     </body>
 
 </html>

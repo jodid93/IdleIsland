@@ -71,11 +71,13 @@ public class HomeController {
 	@RequestMapping(value="/menu")
 	public String displayMenu(Model model, HttpSession session){
 		
-		System.out.println(session.getAttribute("loggedInUser"));
-		
 		if(session.getAttribute("loggedInUser") == null){
 			return "redirect:/login";
 		}
+		
+
+		session.getAttribute("loggedInUser");
+		model.addAttribute("skilabod", session.getAttribute("loggedInUser")+ " er skradur inn");
 		
 		return "menu";
 	}

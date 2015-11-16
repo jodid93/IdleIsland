@@ -11,16 +11,18 @@
     </head>
     <body>
 
-    <h1>Settings</h1>
-    
-    <br>
-    <p>${skilabod}</p>
-    
-    
-	<hr>
-	<form action="/menu" method="get">
-		<p><input type="submit" value="Back" /></p>
-	</form>
+	<div class="col-md-offset-2">
+	    <h1>Settings</h1>
+	    
+	    <br>
+	    <p>${skilabod}</p>
+	    
+	    
+		<hr>
+		<form action="/menu" method="get">
+			<p><input type="submit" value="Back" /></p>
+		</form>
+	</div>
 
     </body>
 
